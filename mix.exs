@@ -16,12 +16,14 @@ defmodule Minio.MixProject do
   end
 
   def application do
-    []
+    [
+      extra_applications: [:crypto]
+    ]
   end
 
   defp deps do
     [
-      {:ex_doc, "~> 0.19.1", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.30.9", only: :dev, runtime: false}
     ]
   end
 

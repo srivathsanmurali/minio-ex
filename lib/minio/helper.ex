@@ -2,7 +2,7 @@ defmodule Minio.Helper do
   
   @doc "HMAC-SHA256 hash computation helper"
   def hmac(key, data),
-    do: :crypto.hmac(:sha256, key, data)
+    do: :crypto.mac(:hmac, :sha256, key, data)
 
   @doc "SHA256 hash computation helper"
   def sha256(data),
