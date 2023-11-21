@@ -16,12 +16,14 @@ defmodule Minio.MixProject do
   end
 
   def application do
-    []
+    [
+      extra_applications: [:crypto]
+    ]
   end
 
   defp deps do
     [
-      {:ex_doc, "~> 0.19.1", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.30.9", only: :dev, runtime: false}
     ]
   end
 
@@ -32,9 +34,9 @@ defmodule Minio.MixProject do
   defp package() do
     [
       name: "minio",
-      maintainers: ["Srivathsan Murali"],
+      maintainers: ["Peter Ullrich"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/srivathsanmurali/minio_ex"}
+      links: %{"GitHub" => "https://github.com/pjullrich/minio_ex"}
     ]
   end
 end
