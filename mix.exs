@@ -34,9 +34,9 @@ defmodule Minio.MixProject do
   defp package() do
     [
       name: "minio",
-      maintainers: ["Peter Ullrich"],
+      maintainers: ["Srivathsan Murali"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/pjullrich/minio_ex"}
+      links: %{"GitHub" => "https://github.com/srivathsanmurali/minio_ex"}
     ]
   end
 end
